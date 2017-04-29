@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Pname</th>
+      <th>User Name</th>
       <th>Category</th>
       <th>Location</th>
       <th>Contact no</th>
@@ -18,6 +19,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.pname %></td>
+        <td><%= product.user.first_name %></td>
         <td><%= product.category %></td>
         <td><%= product.location %></td>
         <td><%= product.contact_no %></td>
